@@ -1,6 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import AppButton from './components/AppButton.vue';
+// Methods
+function addNews() {
+  console.log('working!')
+}
 </script>
 
 <template>
@@ -9,7 +13,7 @@ import TheWelcome from './components/TheWelcome.vue'
        <img alt="Avantio logo" class="logo" src="./assets/Avantio-logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <AppButton text="Agregar nueva noticia" @click="addNews"></AppButton>
     </div>
     </div>
    
@@ -22,9 +26,10 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <style scoped>
 .header {
+  width: 100%;
   display: flex;
   place-items: center;
-  line-height: 1.5;
+  justify-content: space-around;
 }
 
 .logo {
