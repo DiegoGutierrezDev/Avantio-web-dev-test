@@ -5,11 +5,14 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <div class="">
+       <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
+    </div>
+   
   </header>
 
   <main>
@@ -39,8 +42,8 @@ header {
   }
 
   header .wrapper {
-    display: flex;
-    place-items: flex-start;
+    /* display: flex; */
+    /* place-items: flex-start; */
     flex-wrap: wrap;
   }
 }
